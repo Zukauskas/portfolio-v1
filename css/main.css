@@ -1,0 +1,36 @@
+.main-header, .main-content, .bottom-content {
+    display: inline-block;
+    width: 1200px;
+    margin-top: 40px;
+    margin-left: calc(50% - 600px);
+}
+
+.main-content {
+    text-align: center;
+    font-size: 30px;
+}
+
+section {
+    height: 800px
+}
+
+#hero {
+    background-color: yellow;
+}
+
+#about-me {
+    background-color: green;
+}
+
+#projects {
+    background-color: red;
+}
+
+#contacts {
+    background-color: blue;
+}
+
+.bottom-content {
+    height: 100px;
+    background-color: aqua; 
+}
