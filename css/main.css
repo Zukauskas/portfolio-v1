@@ -15,6 +15,8 @@ body {
   position: sticky;
   top: 0;
   background-color: white;
+  border: 3px solid black;
+  border-radius: 0 0 10px 10px;
 }
 .logo {
     float: left;
@@ -94,8 +96,41 @@ section {
     height: 100px;
 }
 
-#projects {
-    background-color: red;
+.project1, .project2, .project3 {
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.project-image1, .project-image2, .project-image3 {
+    height: 200px;
+    border:5px solid transparent;
+}
+
+.project-image1:hover, .project-image2:hover, .project-image3:hover {
+    border-color:green;
+}
+
+.project-image1, .project-image3 {
+    float:left;
+}
+
+.project-image2 {
+    float: right;
+}
+
+.project1-description, .project2-description, .project3-description {
+    font-size: 20px;
+    width: 500px;
+    margin:0;
+    padding-top: 65px;
+}
+
+.project1-description, .project3-description {
+    float: right;
+}
+
+.project2-description {
+    float:left;
 }
 
 #contacts {
