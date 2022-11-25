@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .main-header, .main-content, .bottom-content {
@@ -14,6 +15,8 @@ body {
   position: sticky;
   top: 0;
   background-color: white;
+  border: 3px solid black;
+  border-radius: 0 0 10px 10px;
 }
 .logo {
     float: left;
@@ -22,7 +25,6 @@ body {
 
 .main-nav {
     float: right;
-    font-family: 'Orbitron', sans-serif;
     margin-top: 12.5px;
 }
 
@@ -47,24 +49,93 @@ section {
     padding-top: 50px;
 }
 
-#hero {
-    background-color: yellow;
-    padding-top: 0;
+#hero, #about-me, #projects, #contacts {
+    margin-top: 40px;
+    padding-top: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 10px;
 }
 
-#about-me {
+.main-title {
+    font-size: 35px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 230px;
+}
+
+.description {
+    line-height: 2em;
+}
+.my-name {
+    color: darkgreen;
+}
+
+.profession {
+    color: darkred;
+}
+
+.action-btn {
+    display: inline-block;
+    text-decoration: none;
     background-color: green;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1em;
+    padding: 20px;
+    box-shadow: 0 0.3em rgb(0, 100, 0), 0 0.5em grey;
 }
 
-#projects {
-    background-color: red;
+.technologies {
+    margin-top: 100px;
+}
+
+.tech-images > img {
+    height: 100px;
+}
+
+.project1, .project2, .project3 {
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.project-image1, .project-image2, .project-image3 {
+    height: 200px;
+    border:5px solid transparent;
+}
+
+.project-image1:hover, .project-image2:hover, .project-image3:hover {
+    border-color:green;
+}
+
+.project-image1, .project-image3 {
+    float:left;
+}
+
+.project-image2 {
+    float: right;
+}
+
+.project1-description, .project2-description, .project3-description {
+    font-size: 20px;
+    width: 500px;
+    margin:0;
+    padding-top: 65px;
+}
+
+.project1-description, .project3-description {
+    float: right;
+}
+
+.project2-description {
+    float:left;
 }
 
 #contacts {
-    background-color: blue;
-}
 
+}
 .bottom-content {
     height: 100px;
-    background-color: aqua; 
 }
