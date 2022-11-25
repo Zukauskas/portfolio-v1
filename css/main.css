@@ -134,10 +134,9 @@ section {
 }
 
 #contacts {
-    background-color: blue;
-}
 
+}
 .bottom-content {
     height: 100px;
-    background-color: aqua; 
+    display: inline-block;
 }
