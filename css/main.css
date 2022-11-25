@@ -47,7 +47,8 @@ section {
     padding-top: 50px;
 }
 
-#hero {
+#hero, #about-me, #projects, #contacts {
+    margin-top: 40px;
     padding-top: 40px;
     border: 1px solid black;
     border-radius: 25px;
@@ -85,10 +86,12 @@ section {
     box-shadow: 0 0.3em rgb(0, 100, 0), 0 0.5em grey;
 }
 
+.technologies {
+    margin-top: 100px;
+}
 
-#about-me {
-    background-color: green;
-    margin-top: 20px;
+.tech-images > img {
+    height: 100px;
 }
 
 #projects {
