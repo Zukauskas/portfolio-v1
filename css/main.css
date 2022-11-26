@@ -134,8 +134,27 @@ section {
 }
 
 #contacts {
-
+    height: 300px;
 }
+ 
+.icon {
+    text-decoration: none;
+    color:darkgray;
+}
+
+.icon:hover {
+    color: darkgreen;
+}
+
+.fa-heart {
+    color: red;
+}
+
 .bottom-content {
     height: 100px;
+}
+
+.madewithlove {
+    padding-top: 40px;
+    text-align: center;
 }
