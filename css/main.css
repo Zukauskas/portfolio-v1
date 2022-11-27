@@ -67,7 +67,7 @@ section {
     height: 230px;
 }
 
-.description {
+.main-description {
     line-height: 2em;
 }
 .my-name {
@@ -76,6 +76,10 @@ section {
 
 .profession {
     color: darkred;
+}
+
+.about-me-content {
+    padding: 10px;
 }
 
 .action-btn {
@@ -159,4 +163,79 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+@media screen and (max-width:1200px)  {
+
+    .main-header, .main-content, .bottom-content {
+        width: 1024px;
+        margin-left: calc(50% - 517px);
+    }
+}
+
+@media screen and (max-width:1024px)  {
+
+    .main-header, .main-content, .bottom-content {
+        width: 768px;
+        margin-left: calc(50% - 384px);
+    }
+
+    .project-image1, .project-image2, .project-image3 {
+        height: 150px;
+        border:2.5px solid transparent;
+    }
+
+    .project1-description, .project2-description, .project3-description {
+        font-size: 15px;
+        width: 350px;
+        margin:0;
+        padding-top: 50px;
+    }
+
+    #contacts {
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width:768px)  {
+
+    .logo {
+        height: 30px;
+    }
+    
+    .main-nav {
+        margin-top: 5.5px;
+    }
+    
+    .nav-links {
+        font-size: 15px;
+        margin-right: 0.5em;
+    }
+
+    .main-header, .main-content, .bottom-content {
+        width: 480px;
+        margin-left: calc(50% - 240px);
+    }
+
+    #projects {
+        height: 600px;
+    }
+
+    .project-image1, .project-image2, .project-image3 {
+        height: 100px;
+        border:2.5px solid transparent;
+    }
+
+    .project1-description, .project2-description, .project3-description {
+        font-size: 12px;
+        width: 250px;
+        margin:0;
+        padding-top: 25px;
+    }
+
+    #contacts {
+        height: 200px;
+    }
+
 }
