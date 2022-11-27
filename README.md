@@ -17,7 +17,7 @@ Site published at: https://zukauskas.github.io/portfolio/
 
 -   Basic HTML & CSS
 -   Font Awesome icons
--   Fixed width content (desktop only)
+-   Fixed width content with basic media queries
 
 ## 🧰 Getting Started
 
