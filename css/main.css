@@ -20,7 +20,6 @@ h3 {
 }
 
 .main-header, .main-content, .bottom-content {
-
     width: 1200px;
     margin-left: calc(50% - 600px);
 }
@@ -33,6 +32,7 @@ h3 {
     border: 1px solid black;
     border-radius: 10px;
 }
+
 .logo {
     float: left;
     width: 50px;
@@ -64,16 +64,12 @@ section {
 }
 
 #hero, #about-me, #projects, #contacts, .madewithlove {
-    margin-top: 40px;
-    padding-top: 40px;
+    margin-top: 1em;
+    padding-top: 1em;
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 10px;
     background-color: white;
-}
-
-.main-title {
-    font-size: 35px;
 }
 
 .profile-picture {
@@ -154,6 +150,8 @@ section {
 .icon {
     text-decoration: none;
     color:darkgray;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .icon:hover {
@@ -205,6 +203,22 @@ section {
 
 @media screen and (max-width:768px)  {
 
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .main-header, .main-content, .bottom-content {
+        width: 480px;
+        margin-left: calc(50% - 240px);
+    }
     .logo {
         width: 30px;
     }
@@ -216,11 +230,6 @@ section {
     .nav-links {
         font-size: 15px;
         margin-right: 0.5em;
-    }
-
-    .main-header, .main-content, .bottom-content {
-        width: 480px;
-        margin-left: calc(50% - 240px);
     }
 
     .project-image1, .project-image2, .project-image3 {
