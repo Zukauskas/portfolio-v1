@@ -12,18 +12,26 @@ body {
     background-image:url(../img/background.jpg);
 }
 
+h1,
+h2,
+h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .main-header, .main-content, .bottom-content {
-    display: inline-block;
+
     width: 1200px;
     margin-left: calc(50% - 600px);
 }
 
 .main-header{
-  position: sticky;
-  top: 0;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 10px;
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .logo {
     float: left;
@@ -99,12 +107,10 @@ section {
     box-shadow: 0 0.3em rgb(0, 100, 0), 0 0.5em grey;
 }
 
-.technologies {
-    margin-top: 100px;
-}
-
 .tech-images > img {
-    height: 100px;
+    height: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .project1, .project2, .project3 {
