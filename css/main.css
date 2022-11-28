@@ -64,10 +64,6 @@ h3 {
     font-size: 30px;
 }
 
-section {
-    padding-top: 50px;
-}
-
 #hero, #about-me, #projects, #contacts, .madewithlove {
     margin-top: 1em;
     padding-top: 1em;
@@ -140,7 +136,6 @@ section {
 .project1-description, .project2-description, .project3-description {
     font-size: 20px;
     width: 60%;
-    margin:0;
     padding-top: 5em;
 }
 
@@ -167,14 +162,11 @@ section {
     color: red;
 }
 
-.bottom-content {
-    height: 100px;
-}
-
 .madewithlove {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 @media screen and (max-width:1200px)  {
@@ -224,17 +216,22 @@ section {
         width: 480px;
         margin-left: calc(50% - 240px);
     }
+
+    .main-header {
+        height: 3em;
+    }
+
     .logo {
-        width: 30px;
+        width: 3em;
     }
     
     .main-nav {
-        margin-top: 5.5px;
+        margin-top: 12.5px;
     }
     
     .nav-links {
-        font-size: 15px;
-        margin-right: 0.5em;
+        font-size: 18px;
+        margin-right: 0.4em;
     }
 
     .project-image1, .project-image2, .project-image3 {
