@@ -15,9 +15,9 @@ Site published at: https://zukauskas.github.io/portfolio/
 
 ## 🎯 Project features/goals
 
--   Basic HTML & CSS
+-   HTML & CSS
 -   Font Awesome icons
--   Fixed width content with basic media queries
+-   Responsiveness
 
 ## 🧰 Getting Started
 
