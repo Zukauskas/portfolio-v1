@@ -115,11 +115,12 @@ section {
 
 .project1, .project2, .project3 {
     display: inline-block;
+    width: 80%;
     border: 2px solid black;
 }
 
 .project-image1, .project-image2, .project-image3 {
-    height: 200px;
+    width: 40%;
     border:5px solid transparent;
 }
 
@@ -137,9 +138,9 @@ section {
 
 .project1-description, .project2-description, .project3-description {
     font-size: 20px;
-    width: 500px;
+    width: 60%;
     margin:0;
-    padding-top: 65px;
+    padding-top: 5em;
 }
 
 .project1-description, .project3-description {
@@ -148,10 +149,6 @@ section {
 
 .project2-description {
     float:left;
-}
-
-#contacts {
-    height: 300px;
 }
  
 .icon {
@@ -183,6 +180,10 @@ section {
         width: 1024px;
         margin-left: calc(50% - 517px);
     }
+
+    .project1-description, .project2-description, .project3-description {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:1024px)  {
@@ -193,19 +194,11 @@ section {
     }
 
     .project-image1, .project-image2, .project-image3 {
-        height: 150px;
         border:2.5px solid transparent;
     }
 
     .project1-description, .project2-description, .project3-description {
-        font-size: 15px;
-        width: 350px;
-        margin:0;
-        padding-top: 50px;
-    }
-
-    #contacts {
-        height: 200px;
+        font-size: 14px;
     }
 
 }
@@ -213,7 +206,7 @@ section {
 @media screen and (max-width:768px)  {
 
     .logo {
-        height: 30px;
+        width: 30px;
     }
     
     .main-nav {
@@ -230,24 +223,17 @@ section {
         margin-left: calc(50% - 240px);
     }
 
-    #projects {
-        height: 600px;
-    }
-
     .project-image1, .project-image2, .project-image3 {
-        height: 100px;
+        width: 100%;
         border:2.5px solid transparent;
     }
 
     .project1-description, .project2-description, .project3-description {
+        text-align: center;
         font-size: 12px;
-        width: 250px;
-        margin:0;
-        padding-top: 25px;
-    }
-
-    #contacts {
-        height: 200px;
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
 }
