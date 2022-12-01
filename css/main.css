@@ -152,13 +152,15 @@ body {
 }
 
 .madewithlove {
+    flex-direction: row;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     margin-bottom: 1em;
 }
 
-@media screen and (max-width:1200px)  {
+@media (max-width:1200px)  {
 
     .main-header, .main-content, .bottom-content {
         width: 1024px;
@@ -170,7 +172,7 @@ body {
     }
 }
 
-@media screen and (max-width:1024px)  {
+@media (max-width:1024px)  {
 
     .main-header, .main-content, .bottom-content {
         width: 768px;
@@ -187,7 +189,7 @@ body {
 
 }
 
-@media screen and (max-width:768px)  {
+@media (max-width:768px)  {
 
     .main-title {
         font-size: 1.5em;
@@ -206,13 +208,13 @@ body {
         margin-left: calc(50% - 240px);
     }
 
-    .logo {
-        width: 3em;
-    }
-    
     .nav-links {
         font-size: 18px;
         margin-right: 0.4em;
+    }
+
+    .project1, .project2, .project3 {
+        flex-direction: column;
     }
 
     .project-image1, .project-image2, .project-image3 {
@@ -222,6 +224,7 @@ body {
 
     .project1-description, .project2-description, .project3-description {
         text-align: center;
+        padding: 0.5em;
         font-size: 12px;
         width: 100%;
     }
