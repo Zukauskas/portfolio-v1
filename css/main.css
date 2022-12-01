@@ -17,11 +17,9 @@ body {
     background-image:url(../img/background.jpg);
 }
 
-h1,
-h2,
-h3 {
+.heading {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .main-header, .main-content, .bottom-content {
@@ -30,7 +28,9 @@ h3 {
 }
 
 .main-header{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     background-color: var(--main-color);
@@ -39,13 +39,7 @@ h3 {
 }
 
 .logo {
-    float: left;
     width: 50px;
-}
-
-.main-nav {
-    float: right;
-    margin-top: 12.5px;
 }
 
 .nav-links {
@@ -60,11 +54,16 @@ h3 {
 }
 
 .main-content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     font-size: 30px;
 }
 
 #hero, #about-me, #projects, #contacts, .madewithlove {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
     margin-top: 1em;
     padding-top: 1em;
     border: 1px solid var(--accent-color);
@@ -79,6 +78,7 @@ h3 {
 }
 
 .main-description {
+    text-align: center;
     line-height: 2em;
 }
 .my-name {
@@ -90,6 +90,7 @@ h3 {
 }
 
 .about-me-content {
+    text-align: center;
     padding: 10px;
 }
 
@@ -110,14 +111,19 @@ h3 {
     padding-bottom: 1em;
 }
 
+#projects {
+    padding-bottom: 1em;
+}
+
 .project1, .project2, .project3 {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 80%;
     border: 2px solid var(--accent-color);
 }
 
 .project-image1, .project-image2, .project-image3 {
-    width: 40%;
+    width: 80%;
     border:5px solid transparent;
 }
 
@@ -125,28 +131,11 @@ h3 {
     border-color:green;
 }
 
-.project-image1, .project-image3 {
-    float:left;
-}
-
-.project-image2 {
-    float: right;
-}
-
 .project1-description, .project2-description, .project3-description {
+    text-align: center;
     font-size: 20px;
-    width: 60%;
-    padding-top: 5em;
 }
 
-.project1-description, .project3-description {
-    float: right;
-}
-
-.project2-description {
-    float:left;
-}
- 
 .icon {
     text-decoration: none;
     color:darkgray;
@@ -163,13 +152,15 @@ h3 {
 }
 
 .madewithlove {
+    flex-direction: row;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     margin-bottom: 1em;
 }
 
-@media screen and (max-width:1200px)  {
+@media (max-width:1200px)  {
 
     .main-header, .main-content, .bottom-content {
         width: 1024px;
@@ -181,7 +172,7 @@ h3 {
     }
 }
 
-@media screen and (max-width:1024px)  {
+@media (max-width:1024px)  {
 
     .main-header, .main-content, .bottom-content {
         width: 768px;
@@ -198,17 +189,17 @@ h3 {
 
 }
 
-@media screen and (max-width:768px)  {
+@media (max-width:768px)  {
 
-    h1 {
+    .main-title {
         font-size: 1.5em;
     }
 
-    h2 {
+    h2.heading {
         font-size: 1.2em;
     }
 
-    h3 {
+    h3.heading {
         font-size: 1em;
     }
 
@@ -217,21 +208,13 @@ h3 {
         margin-left: calc(50% - 240px);
     }
 
-    .main-header {
-        height: 3em;
-    }
-
-    .logo {
-        width: 3em;
-    }
-    
-    .main-nav {
-        margin-top: 12.5px;
-    }
-    
     .nav-links {
         font-size: 18px;
         margin-right: 0.4em;
+    }
+
+    .project1, .project2, .project3 {
+        flex-direction: column;
     }
 
     .project-image1, .project-image2, .project-image3 {
@@ -241,10 +224,9 @@ h3 {
 
     .project1-description, .project2-description, .project3-description {
         text-align: center;
+        padding: 0.5em;
         font-size: 12px;
         width: 100%;
-        padding-top: 1em;
-        padding-bottom: 1em;
     }
 
 }
