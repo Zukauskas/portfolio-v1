@@ -19,7 +19,7 @@ body {
 
 .heading {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .main-header, .main-content, .bottom-content {
@@ -54,11 +54,16 @@ body {
 }
 
 .main-content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     font-size: 30px;
 }
 
 #hero, #about-me, #projects, #contacts, .madewithlove {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
     margin-top: 1em;
     padding-top: 1em;
     border: 1px solid var(--accent-color);
@@ -73,6 +78,7 @@ body {
 }
 
 .main-description {
+    text-align: center;
     line-height: 2em;
 }
 .my-name {
@@ -84,6 +90,7 @@ body {
 }
 
 .about-me-content {
+    text-align: center;
     padding: 10px;
 }
 
@@ -194,15 +201,15 @@ body {
 
 @media screen and (max-width:768px)  {
 
-    h1 {
+    .main-title {
         font-size: 1.5em;
     }
 
-    h2 {
+    h2.heading {
         font-size: 1.2em;
     }
 
-    h3 {
+    h3.heading {
         font-size: 1em;
     }
 
@@ -211,16 +218,8 @@ body {
         margin-left: calc(50% - 240px);
     }
 
-    .main-header {
-        height: 3em;
-    }
-
     .logo {
         width: 3em;
-    }
-    
-    .main-nav {
-        margin-top: 12.5px;
     }
     
     .nav-links {
