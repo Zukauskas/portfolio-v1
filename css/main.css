@@ -111,14 +111,19 @@ body {
     padding-bottom: 1em;
 }
 
+#projects {
+    padding-bottom: 1em;
+}
+
 .project1, .project2, .project3 {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 80%;
     border: 2px solid var(--accent-color);
 }
 
 .project-image1, .project-image2, .project-image3 {
-    width: 40%;
+    width: 80%;
     border:5px solid transparent;
 }
 
@@ -126,28 +131,11 @@ body {
     border-color:green;
 }
 
-.project-image1, .project-image3 {
-    float:left;
-}
-
-.project-image2 {
-    float: right;
-}
-
 .project1-description, .project2-description, .project3-description {
+    text-align: center;
     font-size: 20px;
-    width: 60%;
-    padding-top: 5em;
 }
 
-.project1-description, .project3-description {
-    float: right;
-}
-
-.project2-description {
-    float:left;
-}
- 
 .icon {
     text-decoration: none;
     color:darkgray;
@@ -236,8 +224,6 @@ body {
         text-align: center;
         font-size: 12px;
         width: 100%;
-        padding-top: 1em;
-        padding-bottom: 1em;
     }
 
 }
