@@ -23,8 +23,9 @@ body {
 }
 
 .main-header, .main-content, .bottom-content {
-    width: 1200px;
-    margin-left: calc(50% - 600px);
+    --w:1200px;
+    width: var(--w);
+    margin: 0 calc((100% - var(--w))/2);
 }
 
 .main-header{
