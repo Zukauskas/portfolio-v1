@@ -5,6 +5,10 @@
     --accent-color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, 
 body * {
     margin: 0;
