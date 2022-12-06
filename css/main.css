@@ -15,6 +15,7 @@ body * {
 
 body {
     background-image:url(../img/background.jpg);
+    background-attachment: fixed;
 }
 
 .heading {
@@ -23,8 +24,9 @@ body {
 }
 
 .main-header, .main-content, .bottom-content {
-    width: 1200px;
-    margin-left: calc(50% - 600px);
+    --w:1200px;
+    width: var(--w);
+    margin: 0 calc((100% - var(--w))/2);
 }
 
 .main-header{
@@ -107,8 +109,7 @@ body {
 
 .tech-images > img {
     height: 5em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
 #projects {
@@ -139,8 +140,7 @@ body {
 .icon {
     text-decoration: none;
     color:darkgray;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
 .icon:hover {
@@ -154,8 +154,7 @@ body {
 .madewithlove {
     flex-direction: row;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     text-align: center;
     margin-bottom: 1em;
 }
@@ -163,8 +162,7 @@ body {
 @media (max-width:1200px)  {
 
     .main-header, .main-content, .bottom-content {
-        width: 1024px;
-        margin-left: calc(50% - 517px);
+        --w: 1024px;
     }
 
     .project1-description, .project2-description, .project3-description {
@@ -175,8 +173,7 @@ body {
 @media (max-width:1024px)  {
 
     .main-header, .main-content, .bottom-content {
-        width: 768px;
-        margin-left: calc(50% - 384px);
+        --w: 768px;
     }
 
     .project-image1, .project-image2, .project-image3 {
@@ -204,8 +201,7 @@ body {
     }
 
     .main-header, .main-content, .bottom-content {
-        width: 480px;
-        margin-left: calc(50% - 240px);
+        --w: 480px;
     }
 
     .nav-links {
