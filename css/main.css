@@ -27,7 +27,7 @@ body {
     margin-bottom: 0.5em;
 }
 
-.main-header, .main-content, .bottom-content {
+.main-content, .bottom-content {
     --w:1200px;
     width: var(--w);
     margin: 0 calc((100% - var(--w))/2);
@@ -35,17 +35,16 @@ body {
 
 .main-header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     position: sticky;
     top: 0;
     background-color: var(--main-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 10px;
+    height: 3em;
 }
 
-.logo {
-    width: 50px;
+.main-nav {
+    line-height: 2em;
 }
 
 .nav-links {
@@ -53,6 +52,7 @@ body {
     color: var(--accent-color);
     font-size: 20px;
     margin-right: 0.5em;
+    border: 2px solid transparent;
 }
 
 .nav-links:hover{
