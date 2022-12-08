@@ -67,6 +67,35 @@ body * {
     line-height: 2em;
 }
 
+.sentence-1{
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+        typing 2.5s steps(40, end)
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100%; }
+}
+
+.sentence-2{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+        typing2 5s steps(40, end)
+}
+
+@keyframes typing2 {
+  0% { width: 0 }
+  50% {width: 0;}
+  100% { width: 100% }
+}
+
 #hero {
     display: flex;
     justify-content: center;
@@ -89,6 +118,7 @@ body * {
 
 .my-name {
     color: darkgreen;
+
 }
 
 .profession {
