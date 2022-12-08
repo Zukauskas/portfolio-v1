@@ -31,7 +31,7 @@ body * {
     justify-content: center;
     position: sticky;
     top: 0;
-    background-color: var(--main-color);
+    background-color: darkgrey;
     height: 3em;
     border-bottom: 2px solid black;
 }
@@ -42,7 +42,7 @@ body * {
 
 .nav-links {
     text-decoration: none;
-    color: var(--accent-color);
+    color: #fff;
     font-size: 20px;
     margin-right: 0.5em;
     border: 2px solid transparent;
