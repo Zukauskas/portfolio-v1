@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-    --main-color: white;
+    --main-color: rgba(255, 255, 255, 0.9);
     --accent-color: black;
 }
 
@@ -21,7 +21,7 @@ body * {
     margin-top: 1em;
     margin-bottom: 0.5em;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--main-color);
     width: 40%;
 }
 
@@ -61,29 +61,12 @@ body * {
     background-attachment: fixed;
 }
 
-#about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1em;
-}
-
 #projects, #contacts, .madewithlove {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1em;
     background-color: var(--main-color);
-}
-
-.about-me-content {
-    text-align: center;
-    padding: 10px;
-}
-
-.tech-images > img {
-    height: 5em;
-    padding: 1em 0;
 }
 
 #projects {
