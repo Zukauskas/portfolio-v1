@@ -30,6 +30,11 @@
     font-size: 20px;
 }
 
+.project-description a {
+    font-size: 50px;
+    padding: 0.2em 0;
+}
+
 .project-description ul {
     margin: 1em;
 }
