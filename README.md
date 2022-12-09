@@ -72,4 +72,4 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 
 ## 🔗 Other resources
 
-No other resources.
+Icons from : https://vecta.io/symbols/25/web-technologies
