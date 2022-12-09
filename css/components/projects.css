@@ -5,15 +5,17 @@
 }
 
 .project1, .project2, .project3 {
-    display: flex;
     justify-self: center;
+    display: grid;
     align-items: center;
     width: 80%;
     background-color: var(--main-color);
+    padding: 1em 0;
 }
 
 .project-image1, .project-image2, .project-image3 {
-    width: 80%;
+    justify-self: center;
+    max-width: 80%;
     border:5px solid transparent;
 }
 
@@ -21,7 +23,9 @@
     border-color:green;
 }
 
-.project1-description, .project2-description, .project3-description {
+.project-description {
+    max-width: 80%;
+    justify-self: center;
     text-align: center;
     font-size: 20px;
 }
