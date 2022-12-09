@@ -76,19 +76,6 @@ body * {
     background-color: var(--main-color);
 }
 
-.profile-picture {
-    height: 400px;
-}
-
-.my-name {
-    color: darkgreen;
-
-}
-
-.profession {
-    color: darkred;
-}
-
 .about-me-content {
     text-align: center;
     padding: 10px;

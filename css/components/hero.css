@@ -12,6 +12,20 @@
     line-height: 2em;
 }
 
+
+.profile-picture {
+    height: 400px;
+}
+
+.my-name {
+    color: darkgreen;
+
+}
+
+.profession {
+    color: darkred;
+}
+
 .sentence-1{
     overflow: hidden;
     white-space: nowrap; 
