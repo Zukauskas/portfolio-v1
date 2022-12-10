@@ -69,11 +69,9 @@ body * {
     padding: 1em 0;
 }
 
-#contacts > .heading,
-.socials
+#contacts > .heading
 {
     background-color: var(--main-color);
-    width: 60%;
 }
 
 .socials {
@@ -81,11 +79,16 @@ body * {
     justify-content: center;
     gap: 0.5em;
     font-size: 40px;
+    background-color: var(--main-color);
+    width: inherit;
+
 }
 
 .madewithlove {
     padding: 1em 0;
     background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
 }
 
 .icon {
@@ -107,6 +110,7 @@ body * {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .back-to-top {

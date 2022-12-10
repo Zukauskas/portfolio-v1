@@ -13,6 +13,9 @@
 }
 
 .tech-images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 100%;
     background-color: var(--main-color);
     padding: 1em 0;
 }
