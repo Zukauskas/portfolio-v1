@@ -1,0 +1,65 @@
+@media (max-width:1400px)  {
+    .main-title {
+        margin: 0.3em 0 0.1em;
+    }
+
+    #hero {
+        flex-direction: column;
+        gap: 1em 5em;
+        margin: 1em 0;
+    }
+}
+
+@media (max-width:1024px)  {
+
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    h2.heading {
+        font-size: 1.2em;
+    }
+
+    h3.heading {
+        font-size: 1em;
+    }
+
+    .project-image1, .project-image2, .project-image3 {
+        border:2.5px solid transparent;
+    }
+
+    .project1-description, .project2-description, .project3-description {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:768px)  {
+
+    .heading, .left-content {
+        max-width: 100%;
+    }
+
+    .left-content {
+        font-size: 25px;
+        padding: 1em 0.5;
+    }
+
+    .nav-links {
+        font-size: 18px;
+        margin-right: 0.4em;
+    }
+
+    .project-image1, .project-image2, .project-image3 {
+        width: 100%;
+        border:2.5px solid transparent;
+    }
+
+    .project1-description, .project2-description, .project3-description {
+        text-align: center;
+        padding: 0.5em;
+        font-size: 12px;
+        width: 100%;
+    }
+
+}
