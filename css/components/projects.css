@@ -1,0 +1,40 @@
+#projects {
+    display: grid;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.project1, .project2, .project3 {
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    width: 80%;
+    background-color: var(--main-color);
+    padding: 1em 0;
+}
+
+.project-image1, .project-image2, .project-image3 {
+    justify-self: center;
+    max-width: 80%;
+    border:5px solid transparent;
+}
+
+.project-image1:hover, .project-image2:hover, .project-image3:hover {
+    border-color:green;
+}
+
+.project-description {
+    max-width: 80%;
+    justify-self: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.project-description a {
+    font-size: 50px;
+    padding: 0.2em 0;
+}
+
+.project-description ul {
+    margin: 1em;
+}
