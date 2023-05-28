@@ -10,7 +10,7 @@ Personal Portfolio Project
 
 This is an ongoing project with new things being added as I learn HTML/CSS and later Javascript.
 
-Site published at: https://zukauskas.github.io/portfolio/
+Site published at: https://zukauskas.github.io/portfolio-v1/
 
 
 ## 🎯 Project features/goals
